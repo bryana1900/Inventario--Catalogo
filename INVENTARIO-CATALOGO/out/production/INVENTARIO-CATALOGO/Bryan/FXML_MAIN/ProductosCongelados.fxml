@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bryan.Controllers.Controller_ProductosCongelados">
+    <children>
+        <TextField fx:id="nombreC" layoutX="7.0" layoutY="29.0" prefHeight="25.0" prefWidth="198.0" promptText="Nombre Del Producto" />
+        <TextField fx:id="paisC" layoutX="7.0" layoutY="62.0" prefHeight="25.0" prefWidth="198.0" promptText="Pais De Origen" />
+        <TextField fx:id="precioC" layoutX="7.0" layoutY="94.0" prefHeight="25.0" prefWidth="198.0" promptText="Precio" />
+        <ImageView fx:id="ImagenCarga" fitHeight="150.0" fitWidth="251.0" layoutX="289.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="272.0" layoutY="-5.0" text="PRODUCTOS CONGELADOS">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="registrar" layoutX="15.0" layoutY="238.0" mnemonicParsing="false" onAction="#registrar" text="Registrar" />
+        <Button fx:id="modificar" layoutX="87.0" layoutY="238.0" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
+        <Button fx:id="eliminar" layoutX="161.0" layoutY="238.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+        <Line endX="-85.0" endY="-68.0" layoutX="624.0" layoutY="99.0" startX="-333.0" startY="-68.0" />
+        <Line endX="-56.0" endY="110.0" layoutX="597.0" layoutY="72.0" startX="-56.0" startY="-40.0" />
+        <Line endX="-123.0" endY="26.0" layoutX="664.0" layoutY="157.0" startX="-374.0" startY="26.0" />
+        <Line endX="25.0" endY="-68.0" layoutX="265.0" layoutY="100.0" startX="25.0" startY="81.0" />
+        <Button fx:id="subir" layoutX="291.0" layoutY="190.0" mnemonicParsing="false" onAction="#cargar" text="Subir Imagen" />
+        <Button fx:id="cerrar" layoutX="631.0" layoutY="434.0" mnemonicParsing="false" text="Cerrar" />
+        <TableView fx:id="TablaProductosC" layoutX="10.0" layoutY="285.0" onMouseClicked="#seleccionar" prefHeight="178.0" prefWidth="664.0">
+            <columns>
+                <TableColumn fx:id="ColumNombreC" prefWidth="109.0" text="Nombre" />
+                <TableColumn fx:id="ColumPaisC" prefWidth="75.0" text="Pais" />
+                <TableColumn fx:id="ColumPrecioC" prefWidth="84.0" text="Precio" />
+            <TableColumn fx:id="ColumTempMaxC" prefWidth="138.0" text="Temperatura Maxima" />
+            <TableColumn fx:id="ColumTempMinC" prefWidth="156.0" text="Temperatura Minima" />
+            <TableColumn fx:id="codigoC" prefWidth="101.0" text="Codigo" />
+            </columns>
+        </TableView>
+      <TextField fx:id="tempMax" layoutX="7.0" layoutY="126.0" prefHeight="25.0" prefWidth="198.0" promptText="Temperatura Maxima" />
+      <TextField fx:id="tempMin" layoutX="7.0" layoutY="158.0" prefHeight="25.0" prefWidth="198.0" promptText="Temperatura Minima" />
+    </children>
+</AnchorPane>
