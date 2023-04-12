@@ -1,2 +1,4 @@
-# Inventario--Catalogo
-Javafx, Mysql, use de controllers vistas entre otros
+- Java
+- Javafx sdk 7
+- Mysql
+- Format M.V.C
